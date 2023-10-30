@@ -61,8 +61,8 @@ const Home: NextPage = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        {friends.map((hoge: any) => (
-          <p>{hoge.name}</p>
+        {friends.map((hoge: any, index: number) => (
+          <p key={index}>{hoge.name}</p>
         ))}
       </main>
     </div>
